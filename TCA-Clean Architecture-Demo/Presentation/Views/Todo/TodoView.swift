@@ -22,19 +22,19 @@ struct TodoView: View {
                         ForEach(store.todos) { todo in
                             TodoRowView(
                                 todo: todo,
-                                onToggle: { store.send(.toggleTodoCompleted(todo)) },
-                                onDelete: { store.send(.deleteTodo(id: todo.id)) }
+                                onToggle: { store.send(.view(.toggleTodoCompleted(todo))) },
+                                onDelete: { store.send(.view(.deleteTodo(id: todo.id))) }
                             )
                         }
                     }
                     .refreshable {
-                        store.send(.fetchTodos)
+                        store.send(.view(.onAppear))
                     }
                 }
             }
             .navigationTitle("할일 목록")
             .onAppear {
-                store.send(.onAppear)
+                store.send(.view(.onAppear))
             }
             .alert(
                 "오류",
@@ -42,7 +42,7 @@ struct TodoView: View {
                 presenting: store.errorMessage
             ) { _ in
                 Button("확인") {
-                    store.send(.errorDismissed)
+                    store.send(.view(.errorDismissed))
                 }
             } message: { errorMessage in
                 Text(errorMessage)

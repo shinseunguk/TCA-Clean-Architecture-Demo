@@ -22,19 +22,19 @@ struct UserView: View {
                         ForEach(store.users) { user in
                             UserRowView(
                                 user: user,
-                                onSelect: { store.send(.selectUser(user)) },
-                                onDelete: { store.send(.deleteUser(id: user.id)) }
+                                onSelect: { store.send(.view(.selectUser(user))) },
+                                onDelete: { store.send(.view(.deleteUser(id: user.id))) }
                             )
                         }
                     }
                     .refreshable {
-                        store.send(.fetchUsers)
+                        store.send(.view(.onAppear))
                     }
                 }
             }
             .navigationTitle("사용자 목록")
             .onAppear {
-                store.send(.onAppear)
+                store.send(.view(.onAppear))
             }
             .alert(
                 "오류",
@@ -42,7 +42,7 @@ struct UserView: View {
                 presenting: store.errorMessage
             ) { _ in
                 Button("확인") {
-                    store.send(.errorDismissed)
+                    store.send(.view(.errorDismissed))
                 }
             } message: { errorMessage in
                 Text(errorMessage)
@@ -51,7 +51,7 @@ struct UserView: View {
                 item: .constant(store.selectedUser)
             ) { user in
                 UserDetailView(user: user) {
-                    store.send(.selectUser(nil))
+                    store.send(.view(.selectUser(nil)))
                 }
             }
         }
