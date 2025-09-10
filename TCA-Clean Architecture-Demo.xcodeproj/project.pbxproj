@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AC8454DB2E713A35004923F3 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454DA2E713A35004923F3 /* CombineMoya */; };
+		AC8454DD2E713A35004923F3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454DC2E713A35004923F3 /* Moya */; };
+		AC8454DF2E713A35004923F3 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454DE2E713A35004923F3 /* ReactiveMoya */; };
+		AC8454E12E713A35004923F3 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454E02E713A35004923F3 /* RxMoya */; };
+		AC8454E42E713A51004923F3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454E32E713A51004923F3 /* ComposableArchitecture */; };
+		AC8455462E714CE3004923F3 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8455452E714CE3004923F3 /* CLAUDE.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AC8454A32E7119EA004923F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +36,7 @@
 		AC8454952E7119E9004923F3 /* TCA-Clean Architecture-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCA-Clean Architecture-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8454A22E7119EA004923F3 /* TCA-Clean Architecture-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-Clean Architecture-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8454AC2E7119EA004923F3 /* TCA-Clean Architecture-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-Clean Architecture-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8455452E714CE3004923F3 /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8454E42E713A51004923F3 /* ComposableArchitecture in Frameworks */,
+				AC8454DD2E713A35004923F3 /* Moya in Frameworks */,
+				AC8454DB2E713A35004923F3 /* CombineMoya in Frameworks */,
+				AC8454E12E713A35004923F3 /* RxMoya in Frameworks */,
+				AC8454DF2E713A35004923F3 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +90,7 @@
 		AC84548C2E7119E9004923F3 = {
 			isa = PBXGroup;
 			children = (
+				AC8455452E714CE3004923F3 /* CLAUDE.md */,
 				AC8454972E7119E9004923F3 /* TCA-Clean Architecture-Demo */,
 				AC8454A52E7119EA004923F3 /* TCA-Clean Architecture-DemoTests */,
 				AC8454AF2E7119EA004923F3 /* TCA-Clean Architecture-DemoUITests */,
@@ -112,6 +128,11 @@
 			);
 			name = "TCA-Clean Architecture-Demo";
 			packageProductDependencies = (
+				AC8454DA2E713A35004923F3 /* CombineMoya */,
+				AC8454DC2E713A35004923F3 /* Moya */,
+				AC8454DE2E713A35004923F3 /* ReactiveMoya */,
+				AC8454E02E713A35004923F3 /* RxMoya */,
+				AC8454E32E713A51004923F3 /* ComposableArchitecture */,
 			);
 			productName = "TCA-Clean Architecture-Demo";
 			productReference = AC8454952E7119E9004923F3 /* TCA-Clean Architecture-Demo.app */;
@@ -195,6 +216,10 @@
 			);
 			mainGroup = AC84548C2E7119E9004923F3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC8454D92E713A35004923F3 /* XCRemoteSwiftPackageReference "Moya" */,
+				AC8454E22E713A51004923F3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AC8454962E7119E9004923F3 /* Products */;
 			projectDirPath = "";
@@ -212,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8455462E714CE3004923F3 /* CLAUDE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +584,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC8454D92E713A35004923F3 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		AC8454E22E713A51004923F3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.22.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC8454DA2E713A35004923F3 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8454D92E713A35004923F3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		AC8454DC2E713A35004923F3 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8454D92E713A35004923F3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		AC8454DE2E713A35004923F3 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8454D92E713A35004923F3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		AC8454E02E713A35004923F3 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8454D92E713A35004923F3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		AC8454E32E713A51004923F3 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8454E22E713A51004923F3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC84548D2E7119E9004923F3 /* Project object */;
 }

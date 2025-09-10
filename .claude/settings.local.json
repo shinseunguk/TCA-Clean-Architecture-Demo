@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git config:*)",
+      "Bash(mv:*)",
+      "Bash(rmdir:*)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
