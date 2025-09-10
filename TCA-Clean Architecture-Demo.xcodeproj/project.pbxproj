@@ -13,6 +13,7 @@
 		AC8454E12E713A35004923F3 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454E02E713A35004923F3 /* RxMoya */; };
 		AC8454E42E713A51004923F3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AC8454E32E713A51004923F3 /* ComposableArchitecture */; };
 		AC8455462E714CE3004923F3 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8455452E714CE3004923F3 /* CLAUDE.md */; };
+		AC84554A2E714E5D004923F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8455492E714E5D004923F3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		AC8454A22E7119EA004923F3 /* TCA-Clean Architecture-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-Clean Architecture-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8454AC2E7119EA004923F3 /* TCA-Clean Architecture-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCA-Clean Architecture-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8455452E714CE3004923F3 /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
+		AC8455492E714E5D004923F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -90,6 +92,7 @@
 		AC84548C2E7119E9004923F3 = {
 			isa = PBXGroup;
 			children = (
+				AC8455492E714E5D004923F3 /* README.md */,
 				AC8455452E714CE3004923F3 /* CLAUDE.md */,
 				AC8454972E7119E9004923F3 /* TCA-Clean Architecture-Demo */,
 				AC8454A52E7119EA004923F3 /* TCA-Clean Architecture-DemoTests */,
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC84554A2E714E5D004923F3 /* README.md in Resources */,
 				AC8455462E714CE3004923F3 /* CLAUDE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
